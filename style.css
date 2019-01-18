@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+#defaultCanvas {
+  position: relative;
+  margin: 5rem auto;
+  display: block;
+  box-shadow: 0 1em 3em rgba(100,100,100,.6);
+}
+
+#status {
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: fadeinout 1s linear infinite;
+  animation: fadeinout 1s linear infinite;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
